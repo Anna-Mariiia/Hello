@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .weather-app {
+        border: 1px solid #dadde1;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 600px;
+      }
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="weather-app">
+      <form class="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              placeholder="Type a city.."
+              autofocus="on"
+              autocomplete="off"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+        </div>
+      </form>
+      <h1>Sydney NSW, Australia</h1>
+      <ul>
+        <li id="dayWeek">Wednesday 22:00</li>
+        <li>Partly Cloudy</li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="Cloudy icon"
+              class="weather-icon float-left"
+            />
+            <div class="float-left">
+              <span class="temperature">19</span>
+
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: 0%</li>
+            <li>Humidity: 77%</li>
+            <li>Wind: 8 km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+
+    <script>
+      let now = new Date();
+      let day = now.getDay();
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      let days1 = days[now.getDay()];
+
+      function todayDay() {}
+      innerHTML = document.querySelector("#dayWeek");
+      day2.addEventListener(days1, todayDay);
+
+      console.log(days1);
+    </script>
+  </body>
+</html>
